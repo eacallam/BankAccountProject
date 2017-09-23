@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankAccountProject
 {
-    class Account
+    abstract class Account
     {
  //This is the base class; must include:
  //An account number
@@ -16,7 +16,30 @@ namespace BankAccountProject
  //User must be able to deposit money into either account
  //User must be able to withdraw money from either account
 
- //This will be my abstract class
+     //PROPERTIES
+     public int AccountNumber { get; set; }
+     public decimal AccountBalance { get; set; }
+
+    //CONSTRUCTOR
+    public Account()
+        {
+
+        }
+
+     //METHODS
+     public virtual decimal Deposit(decimal depositAmount)
+        {
+            return AccountBalance;
+        }
+     public virtual decimal Withdraw(decimal withdrawAmount)
+        {
+            return AccountBalance;
+        }
+
+     public void ViewBalance()
+        {
+            Console.WriteLine("The balance in the account is " + AccountBalance + ".");
+        }
 
 
 
