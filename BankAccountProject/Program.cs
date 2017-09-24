@@ -27,7 +27,7 @@ namespace BankAccountProject
 
             //SWITCH CASE??
 
-            Client firstClient = new Client("Joyce", "Sample", 43);
+            Client firstClient = new Client();
             CheckingAccount firstChecking = new CheckingAccount(129304, 567.80m);
             SavingsAccount firstSavings = new SavingsAccount(129305, 100.00m, 10.00m);
 

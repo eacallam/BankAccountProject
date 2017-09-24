@@ -27,10 +27,9 @@ namespace BankAccountProject
         }
 
      //METHODS
-     public virtual decimal Deposit(decimal depositAmount)
-        {
-            return AccountBalance;
-        }
+     public abstract decimal Deposit(decimal depositAmount);
+                
+        
      public virtual decimal Withdraw(decimal withdrawAmount)
         {
             return AccountBalance;

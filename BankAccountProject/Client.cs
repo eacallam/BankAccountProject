@@ -37,11 +37,11 @@ namespace BankAccountProject
         }
         
         //CONSTRUCTOR
-        public Client(string firstName, string lastName, int age)
+        public Client()
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
+            firstName = "Joyce";
+            lastName = "Sample";
+            age = 43;
         }
 
         //METHODS
