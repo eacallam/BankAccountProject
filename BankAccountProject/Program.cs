@@ -36,6 +36,7 @@ namespace BankAccountProject
             bool isUsing = true;
             while (isUsing == true)
             {
+                Console.WriteLine("Please select an option:");
                 ShowOptions();
                 int userChoice = int.Parse(Console.ReadLine());
 
@@ -85,7 +86,7 @@ namespace BankAccountProject
                     case 3:
                         {
                             Console.WriteLine();
-                            Console.WriteLine("How much would you like to deposit?");
+                            Console.WriteLine("How much would you like to deposit? Please do not include \"$\" or \",\"");
                             decimal depositAmount = decimal.Parse(Console.ReadLine());
                      
                             bool choseOption = true;
@@ -123,7 +124,7 @@ namespace BankAccountProject
                     case 4:
                         {
                             Console.WriteLine();
-                            Console.WriteLine("How much would you like to withdraw?");
+                            Console.WriteLine("How much would you like to withdraw? Please do not include \"$\" or \",\"");
                             decimal withdrawAmount = decimal.Parse(Console.ReadLine());
 
                             bool choseOption = true;
